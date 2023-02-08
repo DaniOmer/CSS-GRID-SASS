@@ -5,115 +5,118 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+
+  <script src="App.js" defer></script>
   
   <title>Frontend Mentor | News homepage</title>
  
 
 </head>
 <body>
+  <div id="container" aria-expanded="false">
+    <!-------- Header section with logo and nav menu --------->
+    <header>
+      <img src="assets/images/logo.svg" alt="Logo">
 
-  <!-------- Header section with logo and nav menu --------->
-  <header class="header">
-    <img src="assets/images/logo.svg" class="header__logo" alt="">
+      <button class="mobile-nav-toggle" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+      </button>
 
-    <nav class="header__menu">
-      <ul class="menu">
-        <li class="menu__item">
-          <a href="#" class="menu__item--link">Home</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__item--link">New</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__item--link">Popular</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__item--link">Trending</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__item--link">Categories</a>
-        </li>
-      </ul>
+      <nav class="nav">
+        <ul data-visible="false" class="nav__menu">
+          <li class="nav__menu__item">
+            <a href="#" class="nav__menu__item--link">Home</a>
+          </li>
+          <li class="nav__menu__item">
+            <a href="#" class="nav__menu__item--link">New</a>
+          </li>
+          <li class="nav__menu__item">
+            <a href="#" class="nav__menu__item--link">Popular</a>
+          </li>
+          <li class="nav__menu__item">
+            <a href="#" class="nav__menu__item--link">Trending</a>
+          </li>
+          <li class="nav__menu__item">
+            <a href="#" class="nav__menu__item--link">Categories</a>
+          </li>
+        </ul>
 
-      <div class="hamburger">
-        <img src="assets/images/icon-menu.svg" alt="Open menu">
-        <img src="assets/images/icon-menu-close.svg" alt="Close menu">
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <main class="main">
-    <section>
-      <article>
-          <picture>
-            <source media="(max-width:375px)"
-            srcset="assets/images/image-web-3-mobile.jpg">
-            <source media="(min-width:376px) and (max-width:1440px)"
-            srcset="assets/images/image-web-3-desktop.jpg">
-            <img src="assets/images/image-web-3-desktop.jpg" alt="The bridge">
-          </picture>
+    <main class="main">
+      <section class="content__left">
+        <picture>
+          <source media="(max-width:425px)"
+          srcset="assets/images/image-web-3-mobile.jpg">
+          <source media="(min-width:426px) and (max-width:1440px)"
+          srcset="assets/images/image-web-3-desktop.jpg">
+          <img src="assets/images/image-web-3-desktop.jpg" alt="The bridge">
+        </picture>
 
-          <h1>The Bright Future of Web 3.0?</h1>
+        <h1>The Bright Future of Web 3.0?</h1>
 
-          <div>
-            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-              But is it really fulfilling its promise?</p>
+        <article>
+          <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+            But is it really fulfilling its promise?</p>
+          <a href="#">Read more</a>
+        </article>
+      </section>
 
-            <a href="#">Read more</a>
-          </div>
-      </article>
 
-      <aside>
+      <aside class="content__right">
         <h1>New</h1>
-        <div>
-          <h2>Hydrogen VS Electric Cars</h2>
-          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-        </div>
-        <div>
-          <h2>The Downsides of AI Artistry</h2>
-          <p>What are the possible adverse effects of on-demand AI image generation?</p>
-        </div>
-        <div>
-          <h2>Is VC Funding Drying Up?</h2>
-          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-        </div>
-      </aside>
-    </section>
+          <div class="bars">
+            <a href="#">Hydrogen VS Electric Cars</a>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <div class="bars">
+            <a href="#">The Downsides of AI Artistry</a>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          </div>
+          <div>
+            <a href="#">Is VC Funding Drying Up?</a>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
+        </aside>
 
-    <section class="recent">
-      <article class="recent__write">
-        <img src="assets/images/image-retro-pcs.jpg" alt="Retro pcs"  class="recent__write__image">
-        <div class="recent__write__content">
-          <h2>01</h2>
-          <h1>Reviving Retro PCs</h1>
-          <p>What happens when old PCs are given modern upgrades?</p>
-        </div>
-      </article>
+        <section class="content__bottom">
+          <article>
+            <img src="assets/images/image-retro-pcs.jpg" alt="Retro pcs"  class="recent__write__image">
+            <div class="recent__write__content">
+              <h1>01</h1>
+              <a href="#">Reviving Retro PCs</a>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </article>
 
-      <article class="recent__write">
-        <img src="assets/images/image-retro-pcs.jpg" alt="Retro pcs"  class="recent__write__image">
-        <div class="recent__write__content">
-          <h2>02</h2>
-          <h1>Top 10 Laptops of 2022</h1>
-          <p>Our best picks for various needs and budgets.</p>
-        </div>
-      </article>
+          <article>
+            <img src="assets/images/image-top-laptops.jpg" alt="Retro pcs"  class="recent__write__image">
+            <div class="recent__write__content">
+              <h1>02</h1>
+              <a href="#">Top 10 Laptops of 2022</a>
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
+          </article>
 
-      <article class="recent__write">
-        <img src="assets/images/image-retro-pcs.jpg" alt="Retro pcs"  class="recent__write__image">
-        <div class="recent__write__content">
-          <h2>02</h2>
-          <h1>The Growth of Gaming</h1>
-          <p>How the pandemic has sparked fresh opportunities</p>
-        </div>
-      </article>
-    </section>
-  </main>
+          <article>
+            <img src="assets/images/image-gaming-growth.jpg" alt="Retro pcs"  class="recent__write__image">
+            <div class="recent__write__content">
+              <h1>03</h1>
+              <a href="#">The Growth of Gaming</a>
+              <p>How the pandemic has sparked fresh opportunities</p>
+            </div>
+          </article>
+        </section>
+    </main>
 
 
-  <footer class="attribution">
-    <small>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</small> 
-    <small>Coded by <a href="#">Your Name Here</a>.</small>
-  </footer>
+    <footer class="footer">
+      <small>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</small> 
+      <small>Coded by <a href="https://www.linkedin.com/in/omerdotchamou/" target="_blank">Omer Dotchamou</a>.</small>
+    </footer>
+  </div>
 </body>
 </html>

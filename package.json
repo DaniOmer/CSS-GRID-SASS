@@ -4,7 +4,7 @@
   "description": "![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)",
   "main": "index.html",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,24 @@
+/********** GENERAL STYLE ************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/************** HEADER ****************/
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*********** Footer ****************/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/*# sourceMappingURL=style.css.map */
